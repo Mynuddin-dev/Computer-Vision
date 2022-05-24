@@ -39,7 +39,7 @@ s = 0
 if len(sys.argv) > 1:
     s = sys.argv[1]
 
-source = cv2.VideoCapture(s)
+source = cv2.VideoCapture(s)  # 0 default camera | 1 second camera | 2 third camera
 
 win_name = 'Camera Preview'
 cv2.namedWindow(win_name, cv2.WINDOW_NORMAL)
